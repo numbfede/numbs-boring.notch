@@ -1659,7 +1659,7 @@
       }
     },
     "Always follow active display" : {
-      "comment" : "A toggle that allows the user to have Boring Notch follow the active display.",
+      "comment" : "A toggle that allows the user to have Numb's boring.notch follow the active display.",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -3718,147 +3718,147 @@
         }
       }
     },
-    "Boring Notch" : {
+    "Numb's boring.notch" : {
       "localizations" : {
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch"
+            "value" : "Numb's boring.notch"
           }
         }
       }
     },
-    "Boring Notch can analyze the audio playing from your music app to draw a live FFT waveform in the notch, with only a minimal impact on CPU usage." : {
+    "Numb's boring.notch can analyze the audio playing from your music app to draw a live FFT waveform in the notch, with only a minimal impact on CPU usage." : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch peut analyser la lecture audio depuis votre application musicale pour animer dans l'encoche la forme d'onde FFT en temps réel, avec un impact minimal sur l'utilisation du processeur."
+            "value" : "Numb's boring.notch peut analyser la lecture audio depuis votre application musicale pour animer dans l'encoche la forme d'onde FFT en temps réel, avec un impact minimal sur l'utilisation du processeur."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch kan de audio analyseren die via je muziek-app wordt afgespeeld om een live FFT-golfvorm in de inkeping weer te geven, met slechts een minimale invloed op het CPU-gebruik."
+            "value" : "Numb's boring.notch kan de audio analyseren die via je muziek-app wordt afgespeeld om een live FFT-golfvorm in de inkeping weer te geven, met slechts een minimale invloed op het CPU-gebruik."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch может анализировать воспроизведение звука из вашего музыкального приложения, чтобы нарисовать форму звука живого FFT в вырезе, при минимальном влиянии на использование ЦП."
+            "value" : "Numb's boring.notch может анализировать воспроизведение звука из вашего музыкального приложения, чтобы нарисовать форму звука живого FFT в вырезе, при минимальном влиянии на использование ЦП."
           }
         }
       }
     },
-    "Boring Notch can check for updates in the background. You can still check manually from the menu bar at any time." : {
+    "Numb's boring.notch can check for updates in the background. You can still check manually from the menu bar at any time." : {
       "comment" : "A description of the software update permission.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch kann im Hintergrund nach Updates suchen. Sie können jederzeit auch manuell über die Menüleiste nach Updates suchen."
+            "value" : "Numb's boring.notch kann im Hintergrund nach Updates suchen. Sie können jederzeit auch manuell über die Menüleiste nach Updates suchen."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch puede comprobar si hay actualizaciones en segundo plano. Puede comprobar manualmente desde la barra del menú en cualquier momento."
+            "value" : "Numb's boring.notch puede comprobar si hay actualizaciones en segundo plano. Puede comprobar manualmente desde la barra del menú en cualquier momento."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch peut vérifier les mises à jour en arrière-plan. Vous pouvez toujours vérifier manuellement à partir de la barre de menus à tout moment."
+            "value" : "Numb's boring.notch peut vérifier les mises à jour en arrière-plan. Vous pouvez toujours vérifier manuellement à partir de la barre de menus à tout moment."
           }
         },
         "he" : {
@@ -3870,272 +3870,272 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch può controllare gli aggiornamenti in background. È comunque possibile controllare manualmente dalla barra dei menu in qualsiasi momento."
+            "value" : "Numb's boring.notch può controllare gli aggiornamenti in background. È comunque possibile controllare manualmente dalla barra dei menu in qualsiasi momento."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notchはバックグラウンドでアップデートを確認します。また、メニューバーからいつでも確認することもできます。"
+            "value" : "Numb's boring.notchはバックグラウンドでアップデートを確認します。また、メニューバーからいつでも確認することもできます。"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch kan op de achtergrond controleren of er updates beschikbaar zijn. Je kunt dit op elk moment ook handmatig controleren via de menubalk."
+            "value" : "Numb's boring.notch kan op de achtergrond controleren of er updates beschikbaar zijn. Je kunt dit op elk moment ook handmatig controleren via de menubalk."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O Boring Notch pode verificar atualizações em segundo plano. Mesmo assim, você ainda pode verificar manualmente a partir da barra de menus a qualquer momento."
+            "value" : "O Numb's boring.notch pode verificar atualizações em segundo plano. Mesmo assim, você ainda pode verificar manualmente a partir da barra de menus a qualquer momento."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch может проверить наличие обновлений в фоновом режиме. Вы все еще можете вручную проверить в строке меню в любое время."
+            "value" : "Numb's boring.notch может проверить наличие обновлений в фоновом режиме. Вы все еще можете вручную проверить в строке меню в любое время."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch arka planda güncellemeleri denetleyebilir. Güncellemeleri menü çubuğundan istediğiniz zaman denetleyebilirsiniz."
+            "value" : "Numb's boring.notch arka planda güncellemeleri denetleyebilir. Güncellemeleri menü çubuğundan istediğiniz zaman denetleyebilirsiniz."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch може перевіряти наявність оновлень у фоновому режимі. Ви також можете в будь-який момент перевірити їх вручну через інструментальну панель."
+            "value" : "Numb's boring.notch може перевіряти наявність оновлень у фоновому режимі. Ви також можете в будь-який момент перевірити їх вручну через інструментальну панель."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch 可以在后台检查更新。你也可以随时通过菜单栏手动检查。"
+            "value" : "Numb's boring.notch 可以在后台检查更新。你也可以随时通过菜单栏手动检查。"
           }
         }
       }
     },
-    "Boring Notch can show all your upcoming events in one place. Access to your calendar is needed to display your schedule." : {
+    "Numb's boring.notch can show all your upcoming events in one place. Access to your calendar is needed to display your schedule." : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch peut afficher tous vos événements à venir en un seul endroit. L'accès à votre calendrier est nécessaire pour afficher votre planning."
+            "value" : "Numb's boring.notch peut afficher tous vos événements à venir en un seul endroit. L'accès à votre calendrier est nécessaire pour afficher votre planning."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch kan al je aankomende afspraken op één plek weergeven. Toegang tot je agenda is nodig om je planning weer te geven."
+            "value" : "Numb's boring.notch kan al je aankomende afspraken op één plek weergeven. Toegang tot je agenda is nodig om je planning weer te geven."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch может показать все ваши предстоящие события в одном месте. Доступ к календарю необходим для отображения вашего графика."
+            "value" : "Numb's boring.notch может показать все ваши предстоящие события в одном месте. Доступ к календарю необходим для отображения вашего графика."
           }
         }
       }
     },
-    "Boring Notch can show your scheduled reminders alongside your calendar events. Access to Reminders is needed to display your reminders." : {
+    "Numb's boring.notch can show your scheduled reminders alongside your calendar events. Access to Reminders is needed to display your reminders." : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch peut afficher vos rappels programmés à côté des événements de votre calendrier. L'accès aux rappels est nécessaire pour afficher vos rappels."
+            "value" : "Numb's boring.notch peut afficher vos rappels programmés à côté des événements de votre calendrier. L'accès aux rappels est nécessaire pour afficher vos rappels."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch kan je geplande herinneringen naast je agenda-afspraken weergeven. Toegang tot 'Herinneringen' is nodig om je herinneringen weer te geven."
+            "value" : "Numb's boring.notch kan je geplande herinneringen naast je agenda-afspraken weergeven. Toegang tot 'Herinneringen' is nodig om je herinneringen weer te geven."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch может отображать ваши запланированные напоминания вместе с событиями календаря. Доступ к Напоминаниям необходим для их отображения."
+            "value" : "Numb's boring.notch может отображать ваши запланированные напоминания вместе с событиями календаря. Доступ к Напоминаниям необходим для их отображения."
           }
         }
       }
     },
-    "Boring Notch could not verify Now Playing. Try again, or reopen the app if it keeps happening." : {
+    "Numb's boring.notch could not verify Now Playing. Try again, or reopen the app if it keeps happening." : {
       "comment" : "Recoverable Now Playing probe failure message.",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch could not verify Now Playing. Try again, or reopen the app if it keeps happening."
+            "value" : "Numb's boring.notch could not verify Now Playing. Try again, or reopen the app if it keeps happening."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch no pudo verificar la Reproduciendo Ahora. Inténtalo de nuevo o vuelve a abrir la aplicación si sigue sucediendo."
+            "value" : "Numb's boring.notch no pudo verificar la Reproduciendo Ahora. Inténtalo de nuevo o vuelve a abrir la aplicación si sigue sucediendo."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch n'a pas pu vérifier « À l'écoute ». Essayez à nouveau, ou rouvrez l'application si cela continue de se produire."
+            "value" : "Numb's boring.notch n'a pas pu vérifier « À l'écoute ». Essayez à nouveau, ou rouvrez l'application si cela continue de se produire."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch kon niet controleren of ‘Huidig onderdeel’ beschikbaar is. Probeer het opnieuw of open de app opnieuw als het probleem blijft optreden."
+            "value" : "Numb's boring.notch kon niet controleren of ‘Huidig onderdeel’ beschikbaar is. Probeer het opnieuw of open de app opnieuw als het probleem blijft optreden."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O Boring Notch não pôde verificar a Reprodução agora. Tente novamente ou reabra o aplicativo se continuar acontecendo."
+            "value" : "O Numb's boring.notch não pôde verificar a Reprodução agora. Tente novamente ou reabra o aplicativo se continuar acontecendo."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch не смог проверить воспроизведение. Попробуйте еще раз или перезапустите приложение, если это повторится."
+            "value" : "Numb's boring.notch не смог проверить воспроизведение. Попробуйте еще раз или перезапустите приложение, если это повторится."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch, Şu An Çalınan içeriği doğrulayamadı. Tekrar deneyin, sorun sürerse uygulamayı kapatıp yeniden açın."
+            "value" : "Numb's boring.notch, Şu An Çalınan içeriği doğrulayamadı. Tekrar deneyin, sorun sürerse uygulamayı kapatıp yeniden açın."
           }
         }
       }
     },
-    "Boring Notch includes a mirror feature that lets you quickly check your appearance using your camera, right from the notch. Camera access is required only to show this live preview. You can turn the mirror feature on or off at any time in the app." : {
+    "Numb's boring.notch includes a mirror feature that lets you quickly check your appearance using your camera, right from the notch. Camera access is required only to show this live preview. You can turn the mirror feature on or off at any time in the app." : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch comprend une fonction de miroir qui vous permet de vérifier rapidement votre apparence à l'aide de votre caméra, directement depuis l'encoche. L'accès à la caméra n'est nécessaire que pour afficher cet aperçu en direct. Vous pouvez activer ou désactiver la fonction miroir à tout moment dans l'application."
+            "value" : "Numb's boring.notch comprend une fonction de miroir qui vous permet de vérifier rapidement votre apparence à l'aide de votre caméra, directement depuis l'encoche. L'accès à la caméra n'est nécessaire que pour afficher cet aperçu en direct. Vous pouvez activer ou désactiver la fonction miroir à tout moment dans l'application."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch bevat een spiegel-functie waarmee je snel je uiterlijk kunt controleren met je camera, rechtstreeks vanuit de inkeping. Toegang tot de camera is alleen nodig om dit live voorbeeld weer te geven. Je kunt de spiegel-functie op elk moment vanuit de app in- of uitschakelen."
+            "value" : "Numb's boring.notch bevat een spiegel-functie waarmee je snel je uiterlijk kunt controleren met je camera, rechtstreeks vanuit de inkeping. Toegang tot de camera is alleen nodig om dit live voorbeeld weer te geven. Je kunt de spiegel-functie op elk moment vanuit de app in- of uitschakelen."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "В Boring Notch имеется зеркало, которое позволяет быстро проверить ваш внешний вид с помощью вашей камеры прямо в вырезе. Доступ к камере требуется только для отображения этого предварительного просмотра в реальном времени. Вы можете включить или выключить функцию зеркала в любое время в приложении."
+            "value" : "В Numb's boring.notch имеется зеркало, которое позволяет быстро проверить ваш внешний вид с помощью вашей камеры прямо в вырезе. Доступ к камере требуется только для отображения этого предварительного просмотра в реальном времени. Вы можете включить или выключить функцию зеркала в любое время в приложении."
           }
         }
       }
     },
-    "Boring Notch lost its Now Playing connection. Reconnecting automatically..." : {
+    "Numb's boring.notch lost its Now Playing connection. Reconnecting automatically..." : {
       "comment" : "Now Playing runtime failure message shown before an automatic recovery attempt.",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch lost its Now Playing connection. Reconnecting automatically..."
+            "value" : "Numb's boring.notch lost its Now Playing connection. Reconnecting automatically..."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch perdió la conexión con la Reproduciendo Ahora. Reconectando automáticamente..."
+            "value" : "Numb's boring.notch perdió la conexión con la Reproduciendo Ahora. Reconectando automáticamente..."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch a perdu le lien avec « À l'écoute ». Reconnexion en cours..."
+            "value" : "Numb's boring.notch a perdu le lien avec « À l'écoute ». Reconnexion en cours..."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch ha perso la connessione alla Riproduzione in corso. Riconessione automatica..."
+            "value" : "Numb's boring.notch ha perso la connessione alla Riproduzione in corso. Riconessione automatica..."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch heeft de verbinding met ‘Huidig onderdeel’ verloren. Er wordt automatisch opnieuw verbinding gemaakt..."
+            "value" : "Numb's boring.notch heeft de verbinding met ‘Huidig onderdeel’ verloren. Er wordt automatisch opnieuw verbinding gemaakt..."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch perdeu sua conexão com reproduzindo agora. Reconectando automaticamente..."
+            "value" : "Numb's boring.notch perdeu sua conexão com reproduzindo agora. Reconectando automaticamente..."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch потерял соединение с воспроизведением. Автоматическое переподключение..."
+            "value" : "Numb's boring.notch потерял соединение с воспроизведением. Автоматическое переподключение..."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch, Şu An Çalınıyor bağlantısını kaybetti. Otomatik olarak yeniden bağlanılıyor..."
+            "value" : "Numb's boring.notch, Şu An Çalınıyor bağlantısını kaybetti. Otomatik olarak yeniden bağlanılıyor..."
           }
         }
       }
     },
-    "Boring Notch Settings" : {
+    "Numb's boring.notch Settings" : {
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Réglages Boring Notch"
+            "value" : "Réglages Numb's boring.notch"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch instellingen"
+            "value" : "Numb's boring.notch instellingen"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Настройки Boring Notch"
+            "value" : "Настройки Numb's boring.notch"
           }
         }
       }
     },
-    "Boring Notch's Now Playing components are unavailable. Reopen or reinstall the app." : {
+    "Numb's boring.notch's Now Playing components are unavailable. Reopen or reinstall the app." : {
       "comment" : "Now Playing setup failure message shown when required bundled components cannot be used.",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch's Now Playing components are unavailable. Reopen or reinstall the app."
+            "value" : "Numb's boring.notch's Now Playing components are unavailable. Reopen or reinstall the app."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Los componentes de Reproduciendo Ahora de Boring Notch no están disponibles. Vuelve a abrir o reinstala la aplicación."
+            "value" : "Los componentes de Reproduciendo Ahora de Numb's boring.notch no están disponibles. Vuelve a abrir o reinstala la aplicación."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Les composants « À l'écoute » de Boring Notch ne sont pas disponibles. Redémarrez ou réinstallez l'application."
+            "value" : "Les composants « À l'écoute » de Numb's boring.notch ne sont pas disponibles. Redémarrez ou réinstallez l'application."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "I componenti della Riproduzione in corso di Boring Notch non sono disponibili. Riapri o reinstalla l'app."
+            "value" : "I componenti della Riproduzione in corso di Numb's boring.notch non sono disponibili. Riapri o reinstalla l'app."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "De ‘Huidig onderdeel’ componenten van Boring Notch zijn niet beschikbaar. Open de app opnieuw of installeer deze opnieuw."
+            "value" : "De ‘Huidig onderdeel’ componenten van Numb's boring.notch zijn niet beschikbaar. Open de app opnieuw of installeer deze opnieuw."
           }
         },
         "pt-BR" : {
@@ -4147,13 +4147,13 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Компоненты воспроизведения Boring Notch сейчас недоступны. Переоткройте или переустановите приложение."
+            "value" : "Компоненты воспроизведения Numb's boring.notch сейчас недоступны. Переоткройте или переустановите приложение."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch'un Şu An Çalınan bileşenleri şu anda kullanılamıyor. Uygulamayı yeniden açın ya da tekrar yükleyin."
+            "value" : "Numb's boring.notch'un Şu An Çalınan bileşenleri şu anda kullanılamıyor. Uygulamayı yeniden açın ya da tekrar yükleyin."
           }
         }
       }
@@ -5220,24 +5220,24 @@
         }
       }
     },
-    "Changing the app language requires restarting Boring Notch." : {
+    "Changing the app language requires restarting Numb's boring.notch." : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Das Ändern der App-Sprache erfordert einen Neustart von Boring Notch."
+            "value" : "Das Ändern der App-Sprache erfordert einen Neustart von Numb's boring.notch."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Changing the app language requires restarting Boring Notch."
+            "value" : "Changing the app language requires restarting Numb's boring.notch."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cambiar el idioma de la aplicación requiere reiniciar Boring Notch."
+            "value" : "Cambiar el idioma de la aplicación requiere reiniciar Numb's boring.notch."
           }
         },
         "fr" : {
@@ -5255,49 +5255,49 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La modifica della lingua dell'app richiede il riavvio di Boring Notch."
+            "value" : "La modifica della lingua dell'app richiede il riavvio di Numb's boring.notch."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "アプリの言語を変更するにはBoring Notchを再起動する必要があります。"
+            "value" : "アプリの言語を変更するにはNumb's boring.notchを再起動する必要があります。"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Om de taal van de app te wijzigen, moet je Boring Notch opnieuw opstarten."
+            "value" : "Om de taal van de app te wijzigen, moet je Numb's boring.notch opnieuw opstarten."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Alterar o idioma do aplicativo requer reiniciar o Boring Notch."
+            "value" : "Alterar o idioma do aplicativo requer reiniciar o Numb's boring.notch."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Изменение языка приложения требует перезапуска Boring Notch."
+            "value" : "Изменение языка приложения требует перезапуска Numb's boring.notch."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Uygulama dilini değiştirmek için Boring Notch'u yeniden başlatmak gerekir."
+            "value" : "Uygulama dilini değiştirmek için Numb's boring.notch'u yeniden başlatmak gerekir."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Зміна мови програми вимагає перезапуску Boring Notch."
+            "value" : "Зміна мови програми вимагає перезапуску Numb's boring.notch."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "更改应用语言需要重启 Boring Notch。"
+            "value" : "更改应用语言需要重启 Numb's boring.notch。"
           }
         }
       }
@@ -15591,79 +15591,79 @@
         }
       }
     },
-    "Keep Boring Notch Updated" : {
-      "comment" : "A title for a view that allows users to configure Boring Notch's update preferences.",
+    "Keep Numb's boring.notch Updated" : {
+      "comment" : "A title for a view that allows users to configure Numb's boring.notch's update preferences.",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Immer Boring Notch aktualisiert haben"
+            "value" : "Immer Numb's boring.notch aktualisiert haben"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mantener Boring Notch actualizado"
+            "value" : "Mantener Numb's boring.notch actualizado"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Garder Boring Notch à jour"
+            "value" : "Garder Numb's boring.notch à jour"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "השאר את Boring Notch מעודכן"
+            "value" : "השאר את Numb's boring.notch מעודכן"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mantieni Boring Notch aggiornato"
+            "value" : "Mantieni Numb's boring.notch aggiornato"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notchを最新に保つ"
+            "value" : "Numb's boring.notchを最新に保つ"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Houd Boring Notch up-to-date"
+            "value" : "Houd Numb's boring.notch up-to-date"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mantenha o Boring Notch atualizado"
+            "value" : "Mantenha o Numb's boring.notch atualizado"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Сохранять Boring Notch обновленным"
+            "value" : "Сохранять Numb's boring.notch обновленным"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch'u Güncel Tut"
+            "value" : "Numb's boring.notch'u Güncel Tut"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Зберігати Boring Notch оновленим"
+            "value" : "Зберігати Numb's boring.notch оновленим"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "保持 Boring Notch 处于最新版本"
+            "value" : "保持 Numb's boring.notch 处于最新版本"
           }
         }
       }
@@ -25146,120 +25146,120 @@
         }
       }
     },
-    "Restart Boring Notch" : {
+    "Restart Numb's boring.notch" : {
       "localizations" : {
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Restartovat Boring Notch"
+            "value" : "Restartovat Numb's boring.notch"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch neu starten"
+            "value" : "Numb's boring.notch neu starten"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Restart Boring Notch"
+            "value" : "Restart Numb's boring.notch"
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Restart Boring Notch"
+            "value" : "Restart Numb's boring.notch"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reiniciar Boring Notch"
+            "value" : "Reiniciar Numb's boring.notch"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Redémarrer Boring Notch"
+            "value" : "Redémarrer Numb's boring.notch"
           }
         },
         "he" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "הפעל מחדש את Boring Notch"
+            "value" : "הפעל מחדש את Numb's boring.notch"
           }
         },
         "hu" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch újraindítása"
+            "value" : "Numb's boring.notch újraindítása"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Riavvia Boring Notch"
+            "value" : "Riavvia Numb's boring.notch"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notchを再起動"
+            "value" : "Numb's boring.notchを再起動"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch 재시작"
+            "value" : "Numb's boring.notch 재시작"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Herstart Boring Notch"
+            "value" : "Herstart Numb's boring.notch"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Uruchom ponownie Boring Notch"
+            "value" : "Uruchom ponownie Numb's boring.notch"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reiniciar o Boring Notch"
+            "value" : "Reiniciar o Numb's boring.notch"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Перезапустить Boring Notch"
+            "value" : "Перезапустить Numb's boring.notch"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Boring Notch'u yeniden başlat"
+            "value" : "Numb's boring.notch'u yeniden başlat"
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Перезапустити Boring Notch"
+            "value" : "Перезапустити Numb's boring.notch"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重启 Boring Notch"
+            "value" : "重启 Numb's boring.notch"
           }
         },
         "zh-Hant-HK" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重啟 Boring Notch"
+            "value" : "重啟 Numb's boring.notch"
           }
         }
       }

@@ -24,7 +24,7 @@ struct WelcomeView: View {
                         .resizable().scaledToFit()
                         .frame(width: 100, height: 100)
                         .padding(.bottom, 8)
-                    Text("Boring Notch")
+                    Text("Numb's boring.notch")
                         .font(.system(.largeTitle, design: .default))
                         .fontWeight(.semibold)
                     Text("Welcome")

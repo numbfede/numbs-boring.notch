@@ -79,7 +79,7 @@ jobs:
             > "$SOURCE_PROJECT"
           SOURCE_BUILD="$(python3 .github/scripts/extract_build_number.py \
             --pbxproj "$SOURCE_PROJECT" \
-            --bundle-identifier theboringteam.boringnotch)"
+            --bundle-identifier com.numbfede.boringnotch)"
           BUILD_NUMBER="${SOURCE_BUILD}.${RUN_NUMBER}.${RUN_ATTEMPT}"
           echo "source_sha=$SOURCE_SHA" >> "$GITHUB_OUTPUT"
           echo "build_number=$BUILD_NUMBER" >> "$GITHUB_OUTPUT"

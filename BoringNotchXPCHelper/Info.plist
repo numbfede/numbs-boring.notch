@@ -7,7 +7,7 @@
 	     helper is the process that sends the Apple event — without it macOS
 	     kills the process instead of prompting. -->
 	<key>NSAppleEventsUsageDescription</key>
-	<string>boring.notch sends your replies to iMessage conversations from the notch.</string>
+	<string>Numb's boring.notch sends your replies to iMessage conversations from the notch.</string>
 	<key>XPCService</key>
 	<dict>
 		<key>ServiceType</key>

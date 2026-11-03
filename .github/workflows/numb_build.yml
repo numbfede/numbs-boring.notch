@@ -1,0 +1,65 @@
+name: Numb Build
+
+# Ad-hoc signed build of the fork. Downloadable from the run's Artifacts.
+# Compiler errors are re-emitted as annotations so they can be read
+# from the commit's check run.
+on:
+  push:
+    branches:
+      - 'numb/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: numb-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Build
+        run: |
+          set +e
+          xcodebuild \
+            -project boringNotch.xcodeproj \
+            -scheme boringNotch \
+            -configuration Release \
+            -destination "generic/platform=macOS" \
+            -derivedDataPath build \
+            ONLY_ACTIVE_ARCH=NO \
+            CODE_SIGN_IDENTITY=- \
+            CODE_SIGN_STYLE=Manual \
+            DEVELOPMENT_TEAM= \
+            PROVISIONING_PROFILE_SPECIFIER= \
+            build > build.log 2>&1
+          status=$?
+          tail -n 40 build.log
+          if [ "$status" -ne 0 ]; then
+            grep -E '^/.*:[0-9]+:[0-9]+: error: ' build.log | sort -u | head -n 10 | while IFS= read -r line; do
+              file=$(echo "$line" | cut -d: -f1 | sed "s#^$GITHUB_WORKSPACE/##")
+              row=$(echo "$line" | cut -d: -f2)
+              msg=$(echo "$line" | cut -d: -f5-)
+              echo "::error file=$file,line=$row::$msg"
+            done
+            grep -E 'error:|\*\* BUILD FAILED' build.log | grep -vE '^/.*:[0-9]+:[0-9]+: error: ' | sort -u | head -n 5 | while IFS= read -r line; do
+              echo "::error::$line"
+            done
+          fi
+          exit "$status"
+
+      - name: Package
+        run: |
+          APP="build/Build/Products/Release/Numbs Boring Notch.app"
+          ditto -c -k --keepParent "$APP" "Numbs-Boring-Notch.zip"
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: Numbs-Boring-Notch
+          path: Numbs-Boring-Notch.zip
+          if-no-files-found: error
+          retention-days: 30

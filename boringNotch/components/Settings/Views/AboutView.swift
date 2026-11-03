@@ -28,7 +28,7 @@ struct AboutView: View {
     /// issue form query parameter API. Keys must match the form field ids;
     /// renaming the template or its version fields breaks shipped apps.
     private var bugReportURL: URL? {
-        var components = URLComponents(string: "https://github.com/TheBoredTeam/boring.notch/issues/new")
+        var components = URLComponents(string: "https://github.com/numbfede/numbs-boring.notch/issues/new")
         components?.queryItems = [
             URLQueryItem(name: "template", value: "1-bug-report-form.yml"),
             URLQueryItem(name: "version", value: reportVersion),
@@ -88,7 +88,7 @@ struct AboutView: View {
                     }
                     .help("Open a bug report with your version filled in automatically")
                     Button {
-                        if let url = URL(string: "https://github.com/TheBoredTeam/boring.notch") {
+                        if let url = URL(string: "https://github.com/numbfede/numbs-boring.notch") {
                             NSWorkspace.shared.open(url)
                         }
                     } label: {
@@ -107,7 +107,7 @@ struct AboutView: View {
             }
             VStack(spacing: 0) {
                 Divider()
-                Text("Made with 🫶🏻 by not so boring not.people")
+                Text("Numb's boring.notch, an unofficial fork of Boring Notch by TheBoredTeam")
                     .foregroundStyle(.secondary)
                     .padding(.top, 5)
                     .padding(.bottom, 7)

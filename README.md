@@ -1,3 +1,11 @@
+# Numb's boring.notch
+
+> **Unofficial fork** of [Boring Notch](https://github.com/TheBoredTeam/boring.notch) by TheBoredTeam, maintained by [numbfede](https://github.com/numbfede). It is not affiliated with or endorsed by the original project. Please report issues with this fork [here](https://github.com/numbfede/numbs-boring.notch/issues), not upstream.
+>
+> Based on the upstream `dev` branch (2.8), licensed under GPL-3.0 like the original. All credit for the original work goes to its authors. The text below comes from the upstream README, so its install links refer to the official app.
+
+---
+
 <h1 align="center">
   <br>
   <a href="http://theboring.name"><img src="https://framerusercontent.com/images/RFK4vs0kn8pRMuOO58JeyoemXA.png?scale-down-to=256" alt="Boring Notch" width="150"></a>

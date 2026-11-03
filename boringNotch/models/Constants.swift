@@ -11,7 +11,7 @@ import Defaults
 // MARK: - File System Paths
 let documentsDirectory: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
     ?? URL(fileURLWithPath: NSTemporaryDirectory())
-let bundleIdentifier: String = Bundle.main.bundleIdentifier ?? "theboringteam.boringnotch"
+let bundleIdentifier: String = Bundle.main.bundleIdentifier ?? "com.numbfede.boringnotch"
 let appVersion = "\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "") (\(Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""))"
 
 let temporaryDirectory: URL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first
@@ -378,8 +378,8 @@ enum UpdateChannel: String, CaseIterable, Identifiable, Defaults.Serializable {
 
     var feedURLString: String {
         self == .dev
-            ? "https://raw.githubusercontent.com/TheBoredTeam/boring.notch/dev/updater/appcast-dev.xml"
-            : "https://TheBoredTeam.github.io/boring.notch/appcast.xml"
+            ? "https://raw.githubusercontent.com/numbfede/numbs-boring.notch/numb/main/updater/appcast-dev.xml"
+            : "https://raw.githubusercontent.com/numbfede/numbs-boring.notch/numb/main/updater/appcast.xml"
     }
 
     var allowedSparkleChannels: Set<String> {

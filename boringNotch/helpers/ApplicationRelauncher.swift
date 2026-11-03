@@ -31,7 +31,7 @@ enum ApplicationRelauncher {
         workspace.openApplication(at: applicationURL, configuration: configuration) { _, error in
             Task { @MainActor in
                 if let error {
-                    NSLog("Failed to relaunch Boring Notch at %@: %@", applicationURL.path, error.localizedDescription)
+                    NSLog("Failed to relaunch Numb's boring.notch at %@: %@", applicationURL.path, error.localizedDescription)
                     return
                 }
 

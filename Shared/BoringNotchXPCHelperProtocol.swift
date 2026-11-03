@@ -9,7 +9,7 @@ import Foundation
 
 enum BoringNotchAppBundleNames {
     static let legacy = "boringNotch.app"
-    static let current = "Boring Notch.app"
+    static let current = "Numbs Boring Notch.app"
 }
 
 @objc protocol BoringNotchXPCHelperLunarListener {
