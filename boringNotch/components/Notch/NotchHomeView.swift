@@ -172,7 +172,8 @@ struct MusicControlsView: View {
                         let line = trimmed.isEmpty ? "No lyrics found" : trimmed.replacingOccurrences(of: "\n", with: " ")
                         return (line, nil, nil)
                     }()
-                    let line = lyricDisplay.line
+                    // A space keeps the row's height during instrumental gaps.
+                    let line = lyricDisplay.line.isEmpty ? " " : lyricDisplay.line
                     let isPersian = line.unicodeScalars.contains { scalar in
                         let v = scalar.value
                         return v >= 0x0600 && v <= 0x06FF

@@ -38,6 +38,9 @@ struct ContentView: View {
     @Namespace var albumArtNamespace
 
     @Default(.showNotHumanFace) var showNotHumanFace
+    @Default(.enableGestures) private var enableGestures
+    @Default(.closeGestureEnabled) private var closeGestureEnabled
+    @Default(.enableHorizontalMediaGestures) private var enableHorizontalMediaGestures
 
     // Use standardized animations from StandardAnimations enum
     private let animationSpring = StandardAnimations.interactive
@@ -310,19 +313,19 @@ struct ContentView: View {
                             doOpen()
                         }
                     }
-                    .conditionalModifier(Defaults[.enableGestures] && !shouldDisplayNowPlayingFallbackNotice) { view in
+                    .conditionalModifier(enableGestures && !shouldDisplayNowPlayingFallbackNotice) { view in
                         view
                             .panGesture(direction: .down) { translation, phase in
                                 handleDownGesture(translation: translation, phase: phase)
                             }
                     }
-                    .conditionalModifier(Defaults[.closeGestureEnabled] && Defaults[.enableGestures] && !shouldDisplayNowPlayingFallbackNotice) { view in
+                    .conditionalModifier(closeGestureEnabled && enableGestures && !shouldDisplayNowPlayingFallbackNotice) { view in
                         view
                             .panGesture(direction: .up) { translation, phase in
                                 handleUpGesture(translation: translation, phase: phase)
                             }
                     }
-                    .conditionalModifier(Defaults[.enableHorizontalMediaGestures] && Defaults[.enableGestures] && !shouldDisplayNowPlayingFallbackNotice) { view in
+                    .conditionalModifier(enableHorizontalMediaGestures && enableGestures && !shouldDisplayNowPlayingFallbackNotice) { view in
                         view
                             .panGesture(direction: .left) { translation, phase in
                                 handleNextTrackGesture(translation: translation, phase: phase)
@@ -910,28 +913,29 @@ extension ContentView {
     private func handleUpGesture(translation: CGFloat, phase: NSEvent.Phase) {
         guard vm.notchState == .open && !vm.isHoveringCalendar else { return }
 
-        withAnimation(animationSpring) {
-            gestureProgress = (translation / Defaults[.gestureSensitivity]) * -20
-        }
-
         if phase == .ended {
             withAnimation(animationSpring) {
                 gestureProgress = .zero
             }
+            return
         }
 
-        if translation > Defaults[.gestureSensitivity] {
-            withAnimation(animationSpring) {
-                isHovering = false
-            }
-            if !SharingStateManager.shared.preventNotchClose {
-                gestureProgress = .zero
-                vm.close()
-            }
+        withAnimation(animationSpring) {
+            gestureProgress = min(translation / Defaults[.gestureSensitivity], 1) * -20
+        }
 
-            if Defaults[.enableHaptics] {
-                haptics.toggle()
-            }
+        guard translation > Defaults[.gestureSensitivity],
+              !SharingStateManager.shared.preventNotchClose
+        else { return }
+
+        withAnimation(animationSpring) {
+            isHovering = false
+        }
+        gestureProgress = .zero
+        vm.close()
+
+        if Defaults[.enableHaptics] {
+            haptics.toggle()
         }
     }
 

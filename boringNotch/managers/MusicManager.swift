@@ -62,6 +62,7 @@ final class MusicManager: ObservableObject {
     private static let runtimeRecoveryDelay: Duration = .seconds(1)
 
     private var controllerCancellables = Set<AnyCancellable>()
+    private var lyricsSettingCancellable: AnyCancellable?
     private var averageColorTask: Task<Void, Never>?
     private var debounceIdleTask: Task<Void, Never>?
     private var availabilityTask: Task<Void, Never>?
@@ -127,6 +128,21 @@ final class MusicManager: ObservableObject {
     init() {
         Self.migrateMediaControllerPreferenceIfNeeded()
         preferredMediaController = Defaults[.mediaController]
+
+        // Turning lyrics on must not have to wait for the next track.
+        lyricsSettingCancellable = Defaults.publisher(.enableLyrics)
+            .dropFirst()
+            .sink { [weak self] _ in
+                Task { @MainActor in
+                    guard let self else { return }
+                    self.fetchLyricsIfAvailable(
+                        bundleIdentifier: self.bundleIdentifier,
+                        title: self.songTitle,
+                        artist: self.artistName,
+                        duration: self.songDuration
+                    )
+                }
+            }
 
         if preferredMediaController == .nowPlaying {
             activateFallback()
@@ -531,7 +547,12 @@ final class MusicManager: ObservableObject {
             }
 
             // Fetch lyrics on content change
-            self.fetchLyricsIfAvailable(bundleIdentifier: state.bundleIdentifier, title: state.title, artist: state.artist)
+            self.fetchLyricsIfAvailable(
+                bundleIdentifier: state.bundleIdentifier,
+                title: state.title,
+                artist: state.artist,
+                duration: state.duration
+            )
         }
 
         let timeChanged = state.currentTime != self.elapsedTime
@@ -624,7 +645,7 @@ final class MusicManager: ObservableObject {
     }
 
     // MARK: - Lyrics
-    private func fetchLyricsIfAvailable(bundleIdentifier: String?, title: String, artist: String) {
+    private func fetchLyricsIfAvailable(bundleIdentifier: String?, title: String, artist: String, duration: Double) {
         guard Defaults[.enableLyrics], !title.isEmpty else {
             Task { @MainActor in
                 lyricsService.clearLyrics()
@@ -633,7 +654,7 @@ final class MusicManager: ObservableObject {
         }
 
         Task { @MainActor in
-            await lyricsService.fetchLyrics(bundleIdentifier: bundleIdentifier, title: title, artist: artist)
+            await lyricsService.fetchLyrics(bundleIdentifier: bundleIdentifier, title: title, artist: artist, duration: duration)
         }
     }
 

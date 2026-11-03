@@ -23,7 +23,8 @@ extension View {
     func panGesture(direction: PanDirection, threshold: CGFloat = 4, action: @escaping (CGFloat, NSEvent.Phase) -> Void) -> some View {
         self
             .gesture(
-                DragGesture(minimumDistance: 0)
+                // A zero distance would make plain clicks start a drag.
+                DragGesture(minimumDistance: threshold)
                     .onChanged { value in
                         let s = direction.signed(from: value.translation)
                         guard s > 0, s.magnitude >= threshold else { return }
@@ -109,7 +110,11 @@ private struct ScrollMonitor: NSViewRepresentable {
         }
 
         private func handleScroll(_ event: NSEvent) {
-            if event.phase == .ended || event.momentumPhase == .ended {
+            // Inertia is not the user's finger: it could otherwise open the
+            // notch, then close it, long after the swipe has finished.
+            guard event.momentumPhase.isEmpty else { return }
+
+            if event.phase == .ended || event.phase == .cancelled {
                 if active {
                     action(accumulated.magnitude, .ended)
                 } else {
