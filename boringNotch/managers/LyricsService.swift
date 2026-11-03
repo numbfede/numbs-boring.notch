@@ -336,7 +336,8 @@ enum LyricsMatching {
             components?.queryItems?.append(URLQueryItem(name: "artist_name", value: artist))
         }
         // URLComponents leaves "+" as is, and servers read it as a space.
-        components?.percentEncodedQuery = components?.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
+        let encodedQuery = components?.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B")
+        components?.percentEncodedQuery = encodedQuery
         return components?.url
     }
 
