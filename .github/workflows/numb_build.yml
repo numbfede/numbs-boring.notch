@@ -36,6 +36,7 @@ jobs:
             CODE_SIGN_STYLE=Manual \
             DEVELOPMENT_TEAM= \
             PROVISIONING_PROFILE_SPECIFIER= \
+            ENABLE_HARDENED_RUNTIME=NO \
             build > build.log 2>&1
           status=$?
           tail -n 40 build.log
@@ -51,6 +52,50 @@ jobs:
             done
           fi
           exit "$status"
+
+      - name: Launch check
+        run: |
+          APP="build/Build/Products/Release/Numbs Boring Notch.app"
+          EXE="Contents/MacOS/Numbs Boring Notch"
+
+          launch() {
+            "$1/$EXE" > launch.log 2>&1 &
+            pid=$!
+            sleep 20
+            if kill -0 "$pid" 2>/dev/null; then
+              kill "$pid"; wait "$pid" 2>/dev/null
+              return 0
+            fi
+            wait "$pid"; echo "exit status $?" >> launch.log
+            return 1
+          }
+
+          report() {
+            latest=$(ls -t ~/Library/Logs/DiagnosticReports/*Numbs* 2>/dev/null | head -n 1)
+            if [ -n "$latest" ]; then
+              python3 -c "import sys,json;t=open(sys.argv[1]).read().split(chr(10),1)[1];d=json.loads(t);print(json.dumps({'termination':d.get('termination'),'asi':d.get('asi')}))" "$latest" | cut -c1-500
+            fi
+            tail -n 5 launch.log | cut -c1-300
+          }
+
+          # Diagnostic only: the same app with the hardened runtime switched on.
+          HARD="$RUNNER_TEMP/hardened.app"
+          cp -R "$APP" "$HARD"
+          codesign --force --options runtime --sign - --preserve-metadata=entitlements "$HARD"
+          if launch "$HARD"; then
+            echo "::notice::hardened ad-hoc copy launched"
+          else
+            echo "::notice::hardened ad-hoc copy FAILED: $(report | tr '\n' ' ')"
+            rm -f ~/Library/Logs/DiagnosticReports/*Numbs*
+          fi
+
+          codesign --verify --deep --strict "$APP" 2>&1 | tail -n 3
+          if launch "$APP"; then
+            echo "::notice::release app launched and stayed alive"
+          else
+            echo "::error::release app FAILED to launch: $(report | tr '\n' ' ')"
+            exit 1
+          fi
 
       - name: Package
         run: |
